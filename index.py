@@ -51,7 +51,7 @@ R - change the travel time of the selected road
 T - toggle road info
 I - show this list'''
     def __init__(self,fn,*args,**kwargs):
-        self.fn=fn if fn.endswith('.rd') else fn+'.rd'
+        self.fn=fn if fn.endswith('.json') else fn+'.json'
         super().__init__(width=1920,height=1080,caption=f'Roads - {self.fn}',resizable=False,fullscreen=True)
         glClearColor(0,0,0,0)
         glEnable(GL_DEPTH_TEST)
